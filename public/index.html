@@ -1,17 +1,40 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="晁军个人名片网页 - 电影录音师、声音设计师">
-  <title>晁军 | 个人名片</title>
+  <title>晁军 | 电影录音师、声音设计师</title>
+  <meta name="description" content="晁军，电影录音师、声音设计师。1978年毕业于北京电影学院录音系。代表作品《找乐》《漂亮妈妈》《生活秀》《暖》《秋之白华》《大唐玄奘》等。">
+  <meta name="theme-color" content="#100b08">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="canonical" href="https://chaojun-portfolio.vercel.app/">
+
+  <!-- og / twitter 必须是绝对 URL：微信、飞书、X 的爬虫不执行 JS，只读静态 HTML。
+       图片用 JPG 而非 WebP —— 微信和部分国内平台对 webp 缩略图支持不可靠。
+       域名变更时，以下 5 处 URL 需同步替换。 -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="晁军 | 电影录音师、声音设计师">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:url" content="https://chaojun-portfolio.vercel.app/">
+  <meta property="og:title" content="晁军 | 电影录音师、声音设计师">
+  <meta property="og:description" content="1978年毕业于北京电影学院录音系。代表作品《找乐》《漂亮妈妈》《生活秀》《暖》《秋之白华》《大唐玄奘》等。">
+  <meta property="og:image" content="https://chaojun-portfolio.vercel.app/assets/posters/share.jpg">
+  <meta property="og:image:secure_url" content="https://chaojun-portfolio.vercel.app/assets/posters/share.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="晁军，电影录音师、声音设计师">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://chaojun-portfolio.vercel.app/assets/posters/share.jpg">
+
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="no-posters" data-lang="zh">
+<body data-lang="zh">
   <div class="poster-backdrop" aria-hidden="true">
-    <div class="poster-layer poster-primary" id="poster-primary"></div>
-    <div class="poster-layer poster-left" id="poster-left"></div>
-    <div class="poster-layer poster-right" id="poster-right"></div>
+    <div class="poster-layer poster-primary"></div>
+    <div class="poster-layer poster-left"></div>
+    <div class="poster-layer poster-right"></div>
     <div class="poster-overlay"></div>
     <div class="grain"></div>
   </div>
@@ -19,9 +42,9 @@
   <main class="card">
     <header class="topbar">
       <div class="mark">CHAO JUN</div>
-      <div class="lang-switch" role="group" aria-label="Language switch">
-        <button type="button" class="lang-btn active" data-set-lang="zh">中文</button>
-        <button type="button" class="lang-btn" data-set-lang="en">EN</button>
+      <div class="lang-switch" role="group" aria-label="语言切换">
+        <button type="button" class="lang-btn active" data-set-lang="zh" aria-pressed="true">中文</button>
+        <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">EN</button>
       </div>
     </header>
 
@@ -32,24 +55,38 @@
       <p class="intro" id="intro">长期参与电影与影视声音创作，聚焦现场录音、声音设计与后期声音协作。</p>
     </section>
 
-    <section class="panel">
+    <section class="works-block">
       <h2 id="works-heading">代表作品</h2>
       <div class="credits-window">
         <ul id="works-list" class="works-list">
-          <li>《找乐》 (1992)    /    《龙城正月》 (1995)    /    《漂亮妈妈》 (2000)</li>
-          <li>《生活秀》 (2002)    /    《秋之白华》 (2011)    /    《大唐玄奘》 (2016)</li>
+          <li>《我们的田野》 (1981；1983年文化部推荐参加美国第十届学生电影节)    /    《摇滚青年》 (1988)</li>
+          <li>《找乐》 (1992；东京电影节青年导演奖、柏林电影节评委会特别奖等)    /    《无人喝彩》 (1993)</li>
+          <li>《与往事干杯》 (1994)    /    《我爱我家》 (1994；大型情景喜剧)</li>
+          <li>《龙城正月》 (1995；第17届中国电影金鸡奖最佳录音提名)</li>
+          <li>《丽江的故事》 (1999；第5届中国纪录片学术奖单项奖最佳录音奖)    /    《漂亮妈妈》</li>
+          <li>《蓝色爱情》    /    《生活秀》 (上海国际电影节最佳影片)</li>
+          <li>《暖》 (东京电影节金麒麟奖)    /    《情人节》</li>
+          <li>《愚公移山》    /    《萧红》</li>
+          <li>《美人草》 (第24届中国电影金鸡奖最佳录音提名)    /    《清水的故事》</li>
+          <li>《海的故事》    /    《喊过岭的故事》</li>
+          <li>《春滋味》    /    《岁岁清明》</li>
+          <li>《大工匠》 (电视剧)    /    《秋之白华》 (第28届中国电影金鸡奖最佳录音提名)</li>
+          <li>《大唐玄奘》 (2016)    /    《战争子午线》</li>
+          <li>《天出血》    /    《消失的女人》</li>
+          <li>《民警故事》    /    《夏日暖洋洋》</li>
         </ul>
       </div>
     </section>
 
-    <section class="panel">
+    <aside class="info-block">
       <h2 id="about-heading">关于</h2>
       <p id="about-text">1978年毕业于北京电影学院录音系。</p>
-    </section>
+      <div class="info-sep"></div>
+      <h2 id="contact-heading">联系</h2>
+      <ul class="contact-list" id="contact-list"></ul>
+    </aside>
 
-    <a class="cert-link" id="cert-link" href="https://www.icmdb.cn" target="_blank" rel="noopener noreferrer">
-      CMDb 华语影视从业认证
-    </a>
+    <a class="cert-link" id="cert-link" href="https://www.icmdb.cn" target="_blank" rel="noopener noreferrer">CMDb 华语影视从业认证</a>
   </main>
 
   <script src="assets/main.js"></script>
